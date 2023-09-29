@@ -12,4 +12,5 @@
   <li *ngFor="let name of heroNames" class="list-group-item">{{name}}</li>
 </ul>
 
-<button (click)="removeLastHero()" class="btn btn-outline-danger">Borrar último heroe</button>
+<button *ngIf="heroNames.length > 0" (click)="removeLastHero()" class="btn btn-outline-danger">Borrar último heroe</button>
+
