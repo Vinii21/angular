@@ -18,4 +18,8 @@ export class MainPageComponent {
       power: 9500
     }
   ];
+
+  onNewCharacter( character: Character ):void {
+   console.log(character)
+  }
 }
